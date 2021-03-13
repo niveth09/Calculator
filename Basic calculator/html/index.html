@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI calculator</title>
+    <link rel="stylesheet" href="../styles/index.css"></link>
+    <script src="../js/index.js"></script>
+</head>
+<body onload="setFocus()">
+        <div id="main_content">
+            <div id="content">
+                <h2>Basic Calculator</h2>
+                <div id="calculator"> 
+                    <input id="result" />                  
+                    <table>                        
+                        <tr>
+                            <td><button onclick="calc('+')" id="plus">+</button></td>
+                            <td><button onclick="calc('-')" id="minus">-</button></td>
+                            <td><button onclick="calc('*')" id="multiple">x</button></td>
+                            <td><button onclick="calc('/')" id="divide">÷</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="calc('7')">7</button></td>
+                            <td><button onclick="calc('8')">8</button></td>
+                            <td><button onclick="calc('9')">9</button></td>
+                            <td><button onclick="calc('%')" id="modulo">%</button></td>
+
+                        </tr>                      
+                        <tr>
+                            <td><button onclick="calc('4')">4</button></td>
+                            <td><button onclick="calc('5')">5</button></td>
+                            <td><button onclick="calc('6')">6</button></td>
+                            <td><button onclick="calc('c')" id="clear">AC</button></td>
+                        </tr>
+                        <tr>                                                   
+                            <td><button onclick="calc('3')">3</button></td>
+                            <td><button onclick="calc('2')">2</button></td>
+                            <td ><button onclick="calc('1')">1</button></td>
+                            <td rowspan="2" height="80px"><button onclick="calc('d')" id="del">Del</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="calc('.')">.</button></td>
+                            <td><button onclick="calc('0')">0</button></td>
+                            <td><button onclick="calc('=')">=</button></td>
+        
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+</body>
+</html>
